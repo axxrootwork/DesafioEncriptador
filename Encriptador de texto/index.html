@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Encriptador</title>
+</head>
+<body>
+
+    <div class="titulo-encriptador">
+        <h1>Encripta tu texto!</h1>
+        <p>Puedes usar esta web para encriptar un texto con los siguientes botones:</p>
+    </div>
+
+    <div class="contenedor">
+        <div class="caja">
+            <h2>Introduce el texto que quieres encriptar:</h2>
+            <textarea id="texto_sin_cifrar" rows="5" cols="50"></textarea>
+            <button onclick="encriptar()">Encriptar</button>
+            <p>Texto encriptado:</p>
+            <textarea id="texto_cifrado" rows="5" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div class="caja">
+            <button onclick="descifrar()">Descifrar</button>
+            <p>Texto descifrado:</p>
+            <textarea id="texto_descifrado" rows="5" cols="50"></textarea>
+        </div>
+    </div>
+
+    <footer>
+        <h1>Desafio Alura</h1>
+        <img src="./AluraLogo.png" alt="Logo Alura">
+    </footer>
+
+        <script src="./criptografia.js"></script>
+
+</body>
+</html>
